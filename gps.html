@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html><title>HTML GeoLocation Example</title>
+<style>
+h4 { color: #7c795d; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0; }
+h3 { color: #7c795d; font-family: 'Source Sans Pro', sans-serif; font-size: 28px; font-weight: 400; line-height: 32px; margin: 0 0 24px; }
+</style>
+<body><center>
+<h4>Your Location: <h4>
+<h3 id="Location"></h3>
+</body>
+<script>
+var x = document.getElementById("Location");
+
+window.onload = function() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Fuck!! Geolocation is not supported browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "<h3>Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude + 
+	"<br><br>"+ "https://www.google.co.in/maps/place/" 
+	+ position.coords.latitude + "," + position.coords.longitude;
+}
+</script>
+</html>
