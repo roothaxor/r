@@ -1,2 +1,2 @@
-# r
-testing stuff..!! Dont open it People
+# Repo For Personal Stuff Hosting/Testing 
+Dont Mess, Could Get Infected
