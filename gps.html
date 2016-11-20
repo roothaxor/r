@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><title>HTML GeoLocation Example</title>
+<html><title>GeoLocation Only With HTML And Javascript </title>
 <style>
 h4 { color: #7c795d; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0; }
 h3 { color: #7c795d; font-family: 'Source Sans Pro', sans-serif; font-size: 28px; font-weight: 400; line-height: 32px; margin: 0 0 24px; }
@@ -22,8 +22,9 @@ window.onload = function() {
 function showPosition(position) {
     x.innerHTML = "<h3>Latitude: " + position.coords.latitude + 
     "<br>Longitude: " + position.coords.longitude + 
-	"<br><br>"+ "https://www.google.co.in/maps/place/" 
-	+ position.coords.latitude + "," + position.coords.longitude;
+	"<br><br>"+ "<a href= " + "https://www.google.co.in/maps/place/" 
+	+ position.coords.latitude + "," + position.coords.longitude +
+	">Locate On Google Maps</a>"; 
 }
 </script>
 </html>
