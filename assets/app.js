@@ -11,8 +11,8 @@ jQuery(document).ready(function() {
 	jQuery("#player").jPlayer({
 		ready: function() {
 			jQuery(this).jPlayer("setMedia", {
-				m4a: "assets/audio/0.m4a",
-				oga: "assets/audio/0.ogg"
+				m4a: "0.m4a",
+				oga: "0.ogg"
 			}).jPlayer("play");
 
 			var click = document.ontouchstart === undefined ? 'click' : 'touchstart';
