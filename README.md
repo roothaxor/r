@@ -1,3 +1,2 @@
-# Repo For Tests
-Dont Mess, Could Get Infected
-<a href="https://roothaxor.github.io/r/">R</a>
+Dont Mess, Could Get Infected <br>
+<a href="https://roothaxor.github.io/r/">01000011 01101100 01101001 01100011 01101011 00100000 01001000 01100101 01110010 01100101</a>
